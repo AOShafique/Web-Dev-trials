@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+	<head>
+		<title> Form </title>
+		<meta charset = 'utf-8'>
+                <link rel='stylesheet' href = 'table.css'>
+        </head>
+	
+	<body>
+		<form name = 'squad' action = 'send.php' method = 'post'>
+			<table width = '100%', border ='1' cellpadding = '2' cellspacing = '2'>
+				
+				<tr>
+					<td colspan = '2' align = 'center' nowrap><h2>Cricket Team Application</h2></td>
+				</tr>
+			   
+			    <tr>
+					<td>First Name:</td>
+					<td><input type = 'text' id = 'fname' maxlength = '50'></td>
+				</tr>
+				
+				 <tr>
+					<td>Last Name:</td>
+					<td><input type = 'text' id = 'Lname' maxlength = '50'></td>
+				</tr>
+				
+				<tr>
+					<td>Contribution post:</td>
+					<td>
+						<select name = 'post'>
+							<option value = 'C'>Coach</option>
+							<option value= 'M'>Manager</option>
+							<option value = 'P'>Player</option>
+						</select>
+						
+					</td>
+				</tr>
+				
+				 <tr>
+					<td nowrap>Type of Player (if selected player):</td>
+					<td><input type = 'checkbox' name = 'bowl'>Bolwer</td>
+					<td><input type = 'checkbox' name = 'bat'>Batsmen</td>
+				 </tr>
+				
+				 <tr>
+					<td nowrap>Type of Key Player (if selected player):</td>
+					<td><input type = 'radio' name = 'kp' value = 'cap'>Captain</td>
+					<td><input type = 'radio' name = 'kp' value = 'ar'>All Rounder</td>
+					<td><input type = 'radio' name = 'kp'value = 'wk'>Wicket Keeper</td>
+				 </tr>
+				 
+				 <tr>
+					<td>Previous records of play</td>
+					<td><textarea name = 'records' cols = '30' rows = '5'></textarea></td>
+	
+				 </tr>
+				 
+				 <tr>
+					<td><input type = 'submit' name = 'submit' value = 'submit'</td>
+					<td><input type = 'reset' name = 'reset' value = 'reset'</td>
+				 </tr>
+				
+				
+				
+			</table>
+		</form>
+	</body>
+
